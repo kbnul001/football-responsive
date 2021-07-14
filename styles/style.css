@@ -15,9 +15,25 @@ hr{
 }
 
 /* HEADER SECTION STYLES */
+header{
+    padding-top: 4%;
+    background-color: rgba(45, 37, 160, 1);
+}
+nav{
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-menu{
+    width: 600px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15% 5%;
+}
 
 .top-section{
-    background-color: rgba(45, 37, 160, 1);
     display: flex;
     padding: 7% 7%;
     align-items: center;
@@ -170,6 +186,9 @@ article.player{
 
 /* MOBILE DEVICE */
 @media only screen and (max-width: 688px) {
+    nav {
+        display: none;
+    }
     .top-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -187,8 +206,8 @@ article.player{
         margin-left: 0;
     }
     .players{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
     }
     .blog img{
         width: 300px;
@@ -205,6 +224,9 @@ article.player{
 /* TABLET DEVICE */
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+    nav .button-link{
+        padding: 0%;
+    }
     .top-title{
         font-size: 40px;
     }
