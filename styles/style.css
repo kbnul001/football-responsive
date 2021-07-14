@@ -84,6 +84,10 @@ article.player{
 .player-details{
     margin: 15px;
 }
+.player p{
+    color: rgba(108, 108, 108, 1);
+    font-size: 16px;
+}
 
 /* EXTRA section: BLOGS */
 .blogs{
@@ -107,6 +111,10 @@ article.player{
     font-size: 28px;
     font-weight: 700;
     margin: 3% 0%;
+}
+.blog p{
+    color: rgb(94, 93, 93);
+    font-size: 16px;
 }
 .blog a{
     text-decoration: none;
@@ -134,4 +142,77 @@ article.player{
 }
 #coca-image img{
     width: 220px;
+}
+
+/* FOOTER SECTION */
+.footer-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+.footer-logo-image{
+    width: 480px;
+}
+.footer-icons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 14px;
+    margin-bottom: 20px;
+}
+.fab, .far{
+    color: grey;
+}
+
+
+/* MEDIA QUERY */
+
+/* MOBILE DEVICE */
+@media only screen and (max-width: 688px) {
+    .top-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+    }
+    .top-title{
+        font-size: 40px;
+    }
+    .half-width1, .half-width2{
+        width: 100%;
+    }
+    .half-width2{
+        margin-top: 15%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog img{
+        width: 300px;
+    }
+    .blog{
+        width: 300px;
+        margin-bottom: 7%;
+    }
+    .footer-box img{
+        width: 300px;
+    }
+}
+
+/* TABLET DEVICE */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .top-title{
+        font-size: 40px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+    }
+    .footer-box img{
+        width: 400px;
+    }
 }
