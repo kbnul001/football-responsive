@@ -208,6 +208,10 @@ article.player{
     .players{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+    .player{
+        margin-bottom: 2%;
     }
     .blog img{
         width: 300px;
