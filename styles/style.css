@@ -208,7 +208,7 @@ article.player{
     .players{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .player{
         margin-bottom: 2%;
